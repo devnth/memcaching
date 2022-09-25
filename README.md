@@ -16,7 +16,7 @@
 ```
 goose -dir db/migrations create table
 
-goose -dir db/migrations postgres "user=user password=password dbname=dbname sslmode=disable" up
+goose -dir db/migrations postgres "user=user password=password dbname=dbname port=5438 sslmode=disable" up
 ```
 
 
