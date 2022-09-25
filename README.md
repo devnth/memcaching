@@ -22,7 +22,7 @@ goose -dir db/migrations postgres "user=user password=password dbname=dbname por
 
 - create container for memecaching
 ````
-    docker run \
+  docker run \
   -d \
   -p 11211:11211 \
   memcached:1.6.9-alpine
