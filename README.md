@@ -1,8 +1,8 @@
 # todo-api-microservice
 
 - create container for postgresq
-````bash
-    docker run \
+````
+  docker run \
   -d \
   -e POSTGRES_HOST_AUTH_METHOD=trust \
   -e POSTGRES_USER=user \
@@ -13,7 +13,7 @@
   ````
 
 
-- make memecached container
+- create container for memecaching
 ````
     docker run \
   -d \
