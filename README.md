@@ -12,6 +12,13 @@
   postgres:14-alpine
   ````
 
+- migrate table task to containerised postresql using goose migration.
+```
+goose -dir db/migrations create table
+
+goose -dir db/migrations postgres "user=user password=password dbname=dbname sslmode=disable" up
+```
+
 
 - create container for memecaching
 ````
