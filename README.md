@@ -1,6 +1,6 @@
 # todo-api-microservice
 
-- create container for postgresq
+- start postgresql container
 ````
   docker run \
   -d \
@@ -20,7 +20,7 @@ goose -dir db/migrations postgres "user=user password=password dbname=dbname por
 ```
 
 
-- create container for memecaching
+- start memcached container
 ````
   docker run \
   -d \
